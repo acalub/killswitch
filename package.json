@@ -1,23 +1,28 @@
 {
   "name": "killswitch",
+  "description": "Simple utility to help roll in new site features while providing a quick backout 'kill' switch",
   "version": "0.0.1",
-  "description": "Simple utility to help roll in new website feature while providing quick backout \"kill\" switch",
-  "main": "index.js",
-  "scripts": {
-    "test": "mocha -t 1000 -u tdd ./test/*.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:acalub/killswitch.git"
-  },
-  "keywords": [
-    "killswitch",
-    "experimentation"
-  ],
   "author": "Angelo Calub",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/acalub/killswitch/issues"
+  "engines": {
+    "node": ">=0.10.0"
   },
-  "homepage": "https://github.com/acalub/killswitch"
+  "files": [
+    "index.js"
+  ],
+  "dependencies": {
+    "underscore": "^1.7.0",
+    "should": "4.3.0",
+    "fds-request-context": "latest"
+  },
+  "devDependencies": {
+    "mocha": "*"
+  },
+  "scripts": {
+    "test": "mocha -t 10000 -u tdd ./test/*.js"
+  },
+  "main": "index.js",
+  "license": "ISC",
+  "publishConfig": {
+    "registry": "https://heroku-71ebbf1c398b69a3b24d1aa844bddea4f0645b19.registry.nodejitsu.com"
+  }
 }

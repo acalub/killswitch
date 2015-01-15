@@ -1,0 +1,20 @@
+{
+	"newFooterCopyright":{
+		"enabled":false,
+		"description":"Updated footer copyright text",
+		"targets":["foo", "bar", "baz"],
+		"startDate":"Jan 1, 2015",
+		"endDate":"Feb 1, 2015",
+		"enabledValue":true,
+		"disabledValue":false
+	},
+	"newHeaderFOBInteraction": {
+		"enabled": true,
+		"description": "New interaction model for header FOB navigation bar",
+		"targets": ["newHeader"],
+		"startDate": "Sept 20, 2014",
+		"endDate": "Jun 01, 2015",
+		"enabledValue":"xyz",
+		"disabledValue":"abc"
+	}
+}
