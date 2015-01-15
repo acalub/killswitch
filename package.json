@@ -1,0 +1,23 @@
+{
+  "name": "killswitch",
+  "version": "0.0.1",
+  "description": "Simple utility to help roll in new website feature while providing quick backout \"kill\" switch",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha -t 1000 -u tdd ./test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:acalub/killswitch.git"
+  },
+  "keywords": [
+    "killswitch",
+    "experimentation"
+  ],
+  "author": "Angelo Calub",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/acalub/killswitch/issues"
+  },
+  "homepage": "https://github.com/acalub/killswitch"
+}
