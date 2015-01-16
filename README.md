@@ -42,7 +42,7 @@ Next, consume in feature module and create condition check:
     //will default to true if enabled or false if disabled
     return ks.get("newFeatureOne", info) ? newFeatureData : oldFeatureData;
 ```
-Alternatively if we did include a enabledValue/disabledValue we could have done something like:
+Alternatively if we did include an `enabledValue/disabledValue` we could have done something like:
 ```JSON
 "newFeatureOne":{
       "enabled":true,
@@ -54,7 +54,7 @@ Alternatively if we did include a enabledValue/disabledValue we could have done 
       "disabledValue":"oldFeature"
 }
 ```
-and return as:
+and returned as:
 ```Javascript
   var obj = {};
   obj[ks.getValue("newFeatureOne", info)] = ks.getBoolean("newFeatureOne", info) ? newFeatureData : oldFeatureData;
