@@ -1,7 +1,7 @@
 {
   "name": "killswitch",
   "description": "Simple utility to help roll in new site features while providing a quick backout 'kill' switch",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "Angelo Calub",
   "engines": {
     "node": ">=0.10.0"
