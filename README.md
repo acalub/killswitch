@@ -7,7 +7,7 @@ Simple utility to help roll in new website feature while providing quick backout
 $ npm install killswitch
 
 ## Usage
-first create a json file that will store all of your killswitch information:
+First create a json file that will define each of the killswitches in an application.
 ```JSON
   {
     "newFeatureOne":{
@@ -26,7 +26,7 @@ first create a json file that will store all of your killswitch information:
       }
   }
   ```
-  
+  Each killswitch definition has the following required properties `enabled`,`description`, `targets` as an array, `startDate`, `endDate` and the following option properties `enabledValue` and `disabledValue`. These optional values will be returned via the method `getValue`, this method will default to boolean `true/false`.
   next, consume in feature module and create condition check:
   ```Javascript
   //in feature-module.js
