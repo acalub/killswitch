@@ -17,7 +17,7 @@ module.exports = function(json){
 		}
 		else{
 			if(obj.enabled){
-				if(obj.targets && obj.targets.length > 0 && obj.targets.indexOf(info.name) > -1){
+				if(obj.targets && obj.targets.length > 0 && obj.targets.indexOf(info.name) > -1 || obj.targets[0] == "*"){
 					return true;
 				}
 				else{

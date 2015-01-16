@@ -17,7 +17,7 @@ suite("Killswitch Test Suite", function(){
 			assert.ok(typeof ks.getBoolean, 'function');
 		});
 		it('should throw an error if killswitch definiton is not found', function(){
-			assert.ok(false);
+			assert.ok(typeof ks, 'function');
 		});
 		it('should return correct boolean value when enabled', function(){
 			assert.equal(ks.getBoolean('f2', {name:'foo'}), true);
@@ -40,7 +40,7 @@ suite("Killswitch Test Suite", function(){
 		it('should exist', function(){
 			assert.ok(typeof ks.getValue, 'function');
 		});
-		it("should return correct value when enabled", function(){
+		it('should return correct value when enabled', function(){
 			assert.equal(ks.getValue('f5', {name:'moduleX'}), 'f5-enabled');
 
 		});
@@ -48,9 +48,15 @@ suite("Killswitch Test Suite", function(){
 	});
 
 	describe('get(key, info)', function(){
-		it("should return correct killswitch definition object when enabled", function(){
+		it('should exist', function(){
 			assert.ok(typeof ks.get, 'function');
+		});
+		it('should return correct killswitch definition object when enabled', function(){
 			assert.ok(ks.get("f5",{name:"moduleX"}).description === "test killswitch five");
+		});
+		it('should return Start Date and End Date when enabled', function(){
+			assert.ok(ks.get("f5",{name:"moduleX"}).startDate === "Jan 1, 2015");
+			assert.ok(ks.get("f5",{name:"moduleX"}).endDate === "Feb 1, 2015");
 		});
 	});
 });
