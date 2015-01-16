@@ -40,7 +40,7 @@ Next, consume in feature module and create condition check:
     
     //notice this killswitch 'newFeatureOne' does not have enabledValue or disabledValue
     //will default to true if enabled or false if disabled
-    return ks.get("newFeatureOne", info) ? newFeatureData : oldFeatureData;
+    return ks.getBoolean("newFeatureOne", info) ? newFeatureData : oldFeatureData;
 ```
 Alternatively if we did include an `enabledValue/disabledValue` we could have done something like:
 ```JSON
