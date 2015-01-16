@@ -1,5 +1,5 @@
 # killswitch
-Simple utility to help roll in new website features while providing a clearly defined backout "killwitch" mechanism.
+Simple utility to help roll in new website features while providing a clearly defined backout "killswitch" mechanism.
 
 ## Installation
   After install node:
