@@ -26,7 +26,7 @@ First create a json file that will define each of the killswitches in an applica
       }
   }
   ```
-Each killswitch definition has the following required properties `enabled`,`description`, `targets` as an array, `startDate`, `endDate` and the following option properties `enabledValue` and `disabledValue`. These optional values will be returned via the method `getValue`, this method will default to boolean `true/false`.
+Each killswitch definition has the following required properties `enabled`,`description`, `targets` as an array, `startDate`, `endDate` and the following option properties `enabledValue` and `disabledValue`. These optional values will be returned via the method `getValue(key, info)`, this method will default to boolean `true/false` if either `enabledValue` and `disabledValue` are missing.
 
 Next, consume in feature module and create condition check:
   ```Javascript
