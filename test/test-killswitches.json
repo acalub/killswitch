@@ -1,20 +1,43 @@
 {
-	"newFooterCopyright":{
+	"f1":{
 		"enabled":false,
-		"description":"Updated footer copyright text",
+		"description":"test killswitch one",
 		"targets":["foo", "bar", "baz"],
 		"startDate":"Jan 1, 2015",
 		"endDate":"Feb 1, 2015",
-		"enabledValue":true,
-		"disabledValue":false
+		"enabledValue":"f1-enabled",
+		"disabledValue":"f1-disabled"
 	},
-	"newHeaderFOBInteraction": {
-		"enabled": true,
-		"description": "New interaction model for header FOB navigation bar",
-		"targets": ["newHeader"],
-		"startDate": "Sept 20, 2014",
-		"endDate": "Jun 01, 2015",
-		"enabledValue":"xyz",
-		"disabledValue":"abc"
+	"f2":{
+		"enabled":true,
+		"description":"test killswitch two",
+		"targets":["foo", "bar", "baz"],
+		"startDate":"Jan 1, 2015",
+		"endDate":"Feb 1, 2015"
+	},
+	"f3":{
+		"enabled":true,
+		"description":"test killswitch three",
+		"targets":["*"],
+		"startDate":"Jan 1, 2015",
+		"endDate":"Feb 1, 2015",
+		"enabledValue":"abc",
+		"disabledValue":"xyz"
+	},
+	"f4":{
+		"enabled":true,
+		"description":"test killswitch four",
+		"targets":["*"],
+		"startDate":"Jan 1, 2015",
+		"endDate":"Feb 1, 2015"
+	},
+	"f5":{
+		"enabled":true,
+		"description":"test killswitch five",
+		"targets":["moduleX", "someModule"],
+		"startDate":"Jan 1, 2015",
+		"endDate":"Feb 1, 2015",
+		"enabledValue":"f5-enabled",
+		"disabledValue":"f5-disabled"
 	}
 }
