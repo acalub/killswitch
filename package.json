@@ -23,6 +23,6 @@
   "main": "index.js",
   "license": "ISC",
   "publishConfig": {
-    "registry": "https://heroku-71ebbf1c398b69a3b24d1aa844bddea4f0645b19.registry.nodejitsu.com"
+    "registry": "http://registry.npmjs.org"
   }
 }
