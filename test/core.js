@@ -17,7 +17,10 @@ suite("Killswitch Test Suite", function(){
 			assert.ok(typeof ks.getBoolean, 'function');
 		});
 		it('should throw an error if killswitch definiton is not found', function(){
-			assert.ok(typeof ks, 'function');
+			assert.throws(function(){ ks.getBoolean("someModule", {name:"foo"}); }, Error); ///killswitch.getBoolean(key) failed. no matching killswitch key found in killswitches.json\./);
+		});
+		it('should throw an error if killswitch definiton is not found', function(){
+			assert.throws(function(){ ks.getBoolean("someModule", {name:"foo"}); }, /killswitch\.getBoolean\(key\) failed\. no matching killswitch key found in killswitches.json\./);
 		});
 		it('should return correct boolean value when enabled', function(){
 			assert.equal(ks.getBoolean('f2', {name:'foo'}), true);
