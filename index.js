@@ -34,8 +34,6 @@ module.exports = function(json){
 	this.getValue = function(key, info){
 		var flag = this.getBoolean(key, info);
 		var obj = this.get(key, info);
-		console.log('flag: ' + flag);
-		console.log(obj);
 		if(obj.enabledValue && obj.disabledValue && flag){
 			return obj.enabledValue;
 		}
