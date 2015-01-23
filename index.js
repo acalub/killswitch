@@ -1,29 +1,5 @@
-<<<<<<< HEAD
-module.exports = function(json){
-	if(!json){
-		throw new Error("killswitch failed. Missing required json argument");
-	}
-	if(json.redisConfig){
-		//do redis connection here
-	}
-	else{
-		//use flat file approach
-		var switches = typeof json === "string" ? JSON.parse(json) : json;
-	}
-
-
-	this.get = function(key, info){
-	}
-
-	this.set = function(key, value){
-
-
-}
-=======
 var _ = require("underscore"),
    data; /* killswitch data passed in */ 
-
-
 
 module.exports = function(json){
 	if(!json){
@@ -73,7 +49,3 @@ module.exports = function(json){
 		return this.getBoolean(key, info) ? killswitches[key] : null;
 	};
 }
-
-
-
->>>>>>> b95c0a1dee4fce9eda2f5816be93880ed80ff69b
