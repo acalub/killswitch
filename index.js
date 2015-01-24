@@ -1,8 +1,6 @@
 var _ = require("underscore"),
    data; /* killswitch data passed in */ 
 
-
-
 module.exports = function(json){
 	if(!json){
 		throw new Error("new Killswitch(json) failed. Missing required json argument.");
@@ -51,6 +49,3 @@ module.exports = function(json){
 		return this.getBoolean(key, info) ? killswitches[key] : null;
 	};
 }
-
-
-
