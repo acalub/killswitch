@@ -27,7 +27,7 @@
   "license": "ISC",
   "publishConfig": {
     "registry": "http://registry.npmjs.org"
-  }
+  },
   "bugs": {
     "url": "https://github.com/acalub/killswitch/issues"
   },
